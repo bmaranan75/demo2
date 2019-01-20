@@ -16,11 +16,10 @@
 *.iws
 *.iml
 *.ipr
-/out/
+*.log
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+build/
+target/
+out/
+logs/
+bin/
