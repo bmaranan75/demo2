@@ -1,1 +1,4 @@
 rootProject.name = 'demo'
+include 'applications:identity-management'
+findProject(':applications:identity-management')?.name = 'identity-management'
+
