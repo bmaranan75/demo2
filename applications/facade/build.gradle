@@ -1,0 +1,9 @@
+apply from: "$projectDir/../server.gradle"
+springBoot {
+    mainClassName = 'com.example.demo.DemoApplication'
+    buildInfo()
+}
+
+bootJar {
+    baseName = "demo-facade"
+}
