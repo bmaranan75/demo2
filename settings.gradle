@@ -1,4 +1,8 @@
 rootProject.name = 'demo'
 include 'applications:identity-management'
-findProject(':applications:identity-management')?.name = 'identity-management'
+//findProject(':applications:identity-management')?.name = 'identity-management'
+include 'applications:facade'
+//findProject(':applications:facade')?.name = 'applications/facade'
+include 'components:grpc-api'
+findProject(':components:grpc-api')?.name = 'components/grpc-api'
 
