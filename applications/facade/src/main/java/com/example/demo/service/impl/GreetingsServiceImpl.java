@@ -8,11 +8,16 @@ import reactor.core.publisher.Mono;
 public class GreetingsServiceImpl implements GreetingsService {
     @Override
     public String getGreetings(String name) {
+
         return "Hello " + name;
     }
 
     @Override
     public Mono<String> createContact(String name){
         return  Mono.just("Account : " + name  + " created.");
+    }
+
+    private boolean isNameValid(String name){
+        return true;
     }
 }
